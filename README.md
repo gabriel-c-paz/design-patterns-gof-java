@@ -1,16 +1,15 @@
-# Implementation of design patterns in Java with real-world examples.
+# Implementation of Singleton pattern.
 
-## Introduction
-This repository contains the 24 design patterns (from GoF) separated into a respective branch for each one.
+## Definition
+[Refactoring Guru](https://refactoring.guru/design-patterns/singleton): Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
 
-In each branch, you will have: 
-  * the code, 
-  * the class diagram,
-  * the explanation of the pattern.
+## Context
+The Repository pattern must provide data for the application through a source (local or remote).
 
-## Sources
-The study sources that I used to learn design patterns and/or that helped me in any way were:
-  * [Refactoring Guru](https://refactoring.guru/design-patterns/)
-  * [Source Making](https://sourcemaking.com/)
-  * [Exception Not Found](https://exceptionnotfound.net/tag/designpatterns/)
-  * [DPFH](https://github.com/design-patterns-for-humans/)
+However, in most cases, only one instance of a class that implements the repository interface is required. For this reason, we use the Singleton pattern, to restrict the number of instances.
+
+## Class diagram
+<figure>
+  <img src="./src/br/com/example/creational/singleton/singleton.png" alt="Singleton">
+</figure>
+
