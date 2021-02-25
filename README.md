@@ -1,16 +1,14 @@
-# Implementation of design patterns in Java with real-world examples.
+# Implementation of Factory Method pattern.
 
-## Introduction
-This repository contains the 24 design patterns (from GoF) separated into a respective branch for each one.
+## Definition
+[Refactoring Guru](https://refactoring.guru/design-patterns/factory-method): Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 
-In each branch, you will have: 
-  * the code, 
-  * the class diagram,
-  * the explanation of the pattern.
+## Context
+A component can be rendered differently depending on the platform. However, it can contain the same attributes and behaviors.
 
-## Sources
-The study sources that I used to learn design patterns and/or that helped me in any way were:
-  * [Refactoring Guru](https://refactoring.guru/design-patterns/)
-  * [Source Making](https://sourcemaking.com/)
-  * [Exception Not Found](https://exceptionnotfound.net/tag/designpatterns/)
-  * [DPFH](https://github.com/design-patterns-for-humans/)
+In this case, we use the Factory Method pattern to render according to each platform, but maintaining the attributes and behaviors.
+
+## Class diagram
+<figure>
+  <img src="./src/br/com/example/creational/factory_method/factory_method.png" alt="Factory Method">
+</figure>
